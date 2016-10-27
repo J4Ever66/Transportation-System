@@ -1,0 +1,780 @@
+THIS FILE SHOWS MENU SELECTION EXECUTIONS ALONG WITH SYSTEM STATS BEFORE AND AFTER. ONLY USES MINIMUM INFORMATION TO KEEP COMPACT.
+NOTE: MULTIPLE DIFFERENT RUNS ARE SHOWN, MAKING SURE THAT TRAIN, CRUISE AND AIRPORT SUB SYSTEMS ARE FUNCTIONAL.
+
+[1.]    IMPORT SYSTEM FILE DATA
+
+Please choose the desired transportation subsystem:
+1. Air
+2. Train
+3. Cruise
+> 2
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified train route.
+4. Find available train routes provided origin, destination and time.
+5. Book train route given specified seat.
+6. Book train route with seating preference.
+7. Display system details.
+8. Add train station.
+9. Add train line.
+10. Add train route with optional sections.
+11. Quit.
+1
+Please enter input filename:
+tester.txt
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified train route.
+4. Find available train routes provided origin, destination and time.
+5. Book train route given specified seat.
+6. Book train route with seating preference.
+7. Display system details.
+8. Add train station.
+9. Add train line.
+10. Add train route with optional sections.
+11. Quit.
+7
+:[DESTINATIONS]:
+
+[Train Station DEN]
+[Train Station LAX]
+
+:[MANAGERS]:
+
+--- [Trainline AMER] ---
+Available Routes: [Train Trip AA1]
+Year: 2020 - Month: 10 - Day: 8 - Hour: 16 - Minute: 30
+Destinations: [Train Station DEN][Train Station LAX]
+	[:Containers:]
+containers Available: true
+Seating Class: economy
+Layout: S
+Price: 200
+Total containers: 12
+Booked containers: 0
+Seating status:
+Container [0][0]: Available.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+Container [2][0]: Available.
+Container [2][1]: Available.
+Container [2][2]: Available.
+Container [3][0]: Available.
+Container [3][1]: Available.
+Container [3][2]: Available.
+
+containers Available: true
+Seating Class: first
+Layout: S
+Price: 500
+Total containers: 6
+Booked containers: 0
+Seating status:
+Container [0][0]: Available.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+
+
+
+[2.]    BACKUP TO FILE -- BACKUP FILE IS LABELED "BACKUP.txt"
+
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified train route.
+4. Find available train routes provided origin, destination and time.
+5. Book train route given specified seat.
+6. Book train route with seating preference.
+7. Display system details.
+8. Add train station.
+9. Add train line.
+10. Add train route with optional sections.
+11. Quit.
+2
+Please enter output filename:
+BACKUP.txt
+
+ -  -  -  -  -  -  -  -  -  - ... FILE CAN BE FOUND IN ZIP!
+
+
+[3.] ALTER COST OF GIVEN SECTION
+
+3
+Please enter the route ID:
+AA1
+Please enter the seating classification value(E, F, B):
+E
+Please enter the new price:
+666
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified cruise.
+4. Find available flights provided origin, destination and time.
+5. Book flight given specific seat.
+6. Book flight with seating preference.
+7. Display system details.
+8. Add airport.
+9. Add airline.
+10. Add flight with optional sections.
+11. Quit.
+7
+:[DESTINATIONS]:
+
+[Airport DEN]
+[Airport LAX]
+
+:[MANAGERS]:
+
+--- [Airline AMER] ---
+Available Routes: [Flight AA1]
+Year: 2020 - Month: 10 - Day: 8 - Hour: 16 - Minute: 30
+Destinations: [Airport DEN][Airport LAX]
+	[:Containers:]
+containers Available: true
+Seating Class: economy
+Layout: S
+Price: 666
+Total containers: 12
+Booked containers: 0
+Seating status:
+Container [0][0]: Available.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+Container [2][0]: Available.
+Container [2][1]: Available.
+Container [2][2]: Available.
+Container [3][0]: Available.
+Container [3][1]: Available.
+Container [3][2]: Available.
+
+containers Available: true
+Seating Class: first
+Layout: S
+Price: 500
+Total containers: 6
+Booked containers: 0
+Seating status:
+Container [0][0]: Available.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+
+
+[4.]
+
+Please choose the desired transportation subsystem:
+1. Air
+2. Train
+3. Cruise
+> 3
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified cruise route.
+4. Find available cruise routes provided origin, destination and time.
+5. Book cruise route given specified cabin.
+6. Book cruise route with seating preference.
+7. Display system details.
+8. Add port.
+9. Add cruise.
+10. Add cruise route with optional sections.
+11. Quit.
+0
+Invalid range for input. Please try again.
+12
+Invalid range for input. Please try again.
+lkj
+java.lang.NumberFormatException: For input string: "lkj"
+INVALID INPUT! Please try again.
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at travelPackage.Utility.readUserInt(Utility.java:104)
+	at travelPackage.CruiseMenu.displayMenu(CruiseMenu.java:22)
+	at travelPackage.Menu.startMenu(Menu.java:17)
+	at travelPackage.SystemManager.start(SystemManager.java:18)
+	at SampleClient.main(SampleClient.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Invalid range for input. Please try again.
+4
+Please enter origin destination ID:
+DEN
+Please enter the final destination ID:
+LAX
+Please enter the seating classification value(E, F, B):
+F
+Please enter the route year:
+2020
+Please enter the route month:
+10
+Please enter the route day:
+8
+Please enter the route hour:
+16
+Please enter the route minute:
+30
+Available routes from DEN to LAX :
+
+Manager: AMER -- Price: 500 - Route: AA1: DEN to LAX
+
+
+[5.]
+
+Please choose the desired transportation subsystem:
+1. Air
+2. Train
+3. Cruise
+> 2
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified train route.
+4. Find available train routes provided origin, destination and time.
+5. Book train route given specified seat.
+6. Book train route with seating preference.
+7. Display system details.
+8. Add train station.
+9. Add train line.
+10. Add train route with optional sections.
+11. Quit.
+5
+Please enter the row for the seat you wish to book:
+1
+Please enter the column letter for the seat you wish to book:
+A
+Please enter the route ID for the seat you wish to book:
+AA1
+Please enter the seating classification value(E, F, B):
+F
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified train route.
+4. Find available train routes provided origin, destination and time.
+5. Book train route given specified seat.
+6. Book train route with seating preference.
+7. Display system details.
+8. Add train station.
+9. Add train line.
+10. Add train route with optional sections.
+11. Quit.
+7
+:[DESTINATIONS]:
+
+[Train Station DEN]
+[Train Station LAX]
+
+:[MANAGERS]:
+
+--- [Trainline AMER] ---
+Available Routes: [Train Trip AA1]
+Year: 2020 - Month: 10 - Day: 8 - Hour: 16 - Minute: 30
+Destinations: [Train Station DEN][Train Station LAX]
+	[:Containers:]
+containers Available: true
+Seating Class: economy
+Layout: S
+Price: 200
+Total containers: 12
+Booked containers: 0
+Seating status:
+Container [0][0]: Available.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+Container [2][0]: Available.
+Container [2][1]: Available.
+Container [2][2]: Available.
+Container [3][0]: Available.
+Container [3][1]: Available.
+Container [3][2]: Available.
+
+containers Available: true
+Seating Class: first
+Layout: S
+Price: 500
+Total containers: 6
+Booked containers: 1
+Seating status:
+Container [0][0]: Booked.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+
+
+[6.]
+
+Please choose the desired transportation subsystem:
+1. Air
+2. Train
+3. Cruise
+> 1
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified flight.
+4. Find available flights provided origin, destination and time.
+5. Book flight given specific seat.
+6. Book flight with seating preference.
+7. Display system details.
+8. Add airport.
+9. Add airline.
+10. Add flight with optional sections.
+11. Quit.
+6
+Please enter the route ID for the seat you wish to book:
+AA1
+Please enter the seating preference 'AISLE' OR 'WINDOW':
+AISLE
+ROW: 0 COL:0
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified flight.
+4. Find available flights provided origin, destination and time.
+5. Book flight given specific seat.
+6. Book flight with seating preference.
+7. Display system details.
+8. Add airport.
+9. Add airline.
+10. Add flight with optional sections.
+11. Quit.
+7
+:[DESTINATIONS]:
+
+[Airport DEN]
+[Airport LAX]
+
+:[MANAGERS]:
+
+--- [Airline AMER] ---
+Available Routes: [Flight AA1]
+Year: 2020 - Month: 10 - Day: 8 - Hour: 16 - Minute: 30
+Destinations: [Airport DEN][Airport LAX]
+	[:Containers:]
+containers Available: true
+Seating Class: economy
+Layout: S
+Price: 200
+Total containers: 12
+Booked containers: 1
+Seating status:
+Container [0][0]: Booked.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+Container [2][0]: Available.
+Container [2][1]: Available.
+Container [2][2]: Available.
+Container [3][0]: Available.
+Container [3][1]: Available.
+Container [3][2]: Available.
+
+containers Available: true
+Seating Class: first
+Layout: S
+Price: 500
+Total containers: 6
+Booked containers: 0
+Seating status:
+Container [0][0]: Available.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+
+--------------------------------------------------- [6.] RUN #2
+
+6
+Please enter the route ID for the seat you wish to book:
+AA1
+Please enter the seating preference 'AISLE' OR 'WINDOW':
+WINDOW
+0 &1
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified flight.
+4. Find available flights provided origin, destination and time.
+5. Book flight given specific seat.
+6. Book flight with seating preference.
+7. Display system details.
+8. Add airport.
+9. Add airline.
+10. Add flight with optional sections.
+11. Quit.
+7
+:[DESTINATIONS]:
+
+[Airport DEN]
+[Airport LAX]
+
+:[MANAGERS]:
+
+--- [Airline AMER] ---
+Available Routes: [Flight AA1]
+Year: 2020 - Month: 10 - Day: 8 - Hour: 16 - Minute: 30
+Destinations: [Airport DEN][Airport LAX]
+	[:Containers:]
+containers Available: true
+Seating Class: economy
+Layout: S
+Price: 200
+Total containers: 12
+Booked containers: 1
+Seating status:
+Container [0][0]: Booked.
+Container [0][1]: Booked.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+Container [2][0]: Available.
+Container [2][1]: Available.
+Container [2][2]: Available.
+Container [3][0]: Available.
+Container [3][1]: Available.
+Container [3][2]: Available.
+
+containers Available: true
+Seating Class: first
+Layout: S
+Price: 500
+Total containers: 6
+Booked containers: 0
+Seating status:
+Container [0][0]: Available.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+
+[7.] Display System details is shown throughout the different examples.
+
+[8.]
+
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified flight.
+4. Find available flights provided origin, destination and time.
+5. Book flight given specific seat.
+6. Book flight with seating preference.
+7. Display system details.
+8. Add airport.
+9. Add airline.
+10. Add flight with optional sections.
+11. Quit.
+8
+Please enter the destination ID.
+1337
+Sorry, airport already exists or has an invalid ID.
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified flight.
+4. Find available flights provided origin, destination and time.
+5. Book flight given specific seat.
+6. Book flight with seating preference.
+7. Display system details.
+8. Add airport.
+9. Add airline.
+10. Add flight with optional sections.
+11. Quit.
+8
+Please enter the destination ID.
+NV0
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified flight.
+4. Find available flights provided origin, destination and time.
+5. Book flight given specific seat.
+6. Book flight with seating preference.
+7. Display system details.
+8. Add airport.
+9. Add airline.
+10. Add flight with optional sections.
+11. Quit.
+7
+:[DESTINATIONS]:
+
+[Airport DEN]
+[Airport LAX]
+[Airport NV0]
+
+:[MANAGERS]:
+
+--- [Airline AMER] ---
+Available Routes: [Flight AA1]
+Year: 2020 - Month: 10 - Day: 8 - Hour: 16 - Minute: 30
+Destinations: [Airport DEN][Airport LAX]
+	[:Containers:]
+containers Available: true
+Seating Class: economy
+Layout: S
+Price: 200
+Total containers: 12
+Booked containers: 1
+Seating status:
+Container [0][0]: Booked.
+Container [0][1]: Booked.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+Container [2][0]: Available.
+Container [2][1]: Available.
+Container [2][2]: Available.
+Container [3][0]: Available.
+Container [3][1]: Available.
+Container [3][2]: Available.
+
+containers Available: true
+Seating Class: first
+Layout: S
+Price: 500
+Total containers: 6
+Booked containers: 0
+Seating status:
+Container [0][0]: Available.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+
+[9.]
+
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified flight.
+4. Find available flights provided origin, destination and time.
+5. Book flight given specific seat.
+6. Book flight with seating preference.
+7. Display system details.
+8. Add airport.
+9. Add airline.
+10. Add flight with optional sections.
+11. Quit.
+7
+:[DESTINATIONS]:
+
+[Airport DEN]
+[Airport LAX]
+[Airport NV0]
+
+:[MANAGERS]:
+
+--- [Airline AMER] ---
+Available Routes: [Flight AA1]
+Year: 2020 - Month: 10 - Day: 8 - Hour: 16 - Minute: 30
+Destinations: [Airport DEN][Airport LAX]
+	[:Containers:]
+containers Available: true
+Seating Class: economy
+Layout: S
+Price: 200
+Total containers: 12
+Booked containers: 1
+Seating status:
+Container [0][0]: Booked.
+Container [0][1]: Booked.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+Container [2][0]: Available.
+Container [2][1]: Available.
+Container [2][2]: Available.
+Container [3][0]: Available.
+Container [3][1]: Available.
+Container [3][2]: Available.
+
+containers Available: true
+Seating Class: first
+Layout: S
+Price: 500
+Total containers: 6
+Booked containers: 0
+Seating status:
+Container [0][0]: Available.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+
+
+
+--- [Airline 1337] ---
+
+
+[10.]
+
+
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified train route.
+4. Find available train routes provided origin, destination and time.
+5. Book train route given specified seat.
+6. Book train route with seating preference.
+7. Display system details.
+8. Add train station.
+9. Add train line.
+10. Add train route with optional sections.
+11. Quit.
+10
+Please enter the origin destination ID.
+LAX
+Please enter the final destination ID.
+DEN
+Please enter the route year:
+2020
+Please enter the route month:
+8
+Please enter the route day:
+8
+Please enter the route hour:
+8
+Please enter the route minute:
+8
+Please enter the route ID:
+EEE
+Please enter the manager ID:
+AMER
+Please enter the number of containers(sections):
+1
+Please enter the seating classification value(E, F, B):
+E
+Please enter the new price:
+6666
+How many rows of containers?
+1
+Please enter the container layout(S, M, W)
+W
+
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified train route.
+4. Find available train routes provided origin, destination and time.
+5. Book train route given specified seat.
+6. Book train route with seating preference.
+7. Display system details.
+8. Add train station.
+9. Add train line.
+10. Add train route with optional sections.
+11. Quit.
+7
+:[DESTINATIONS]:
+
+[Train Station DEN]
+[Train Station LAX]
+
+:[MANAGERS]:
+
+--- [Trainline AMER] ---
+Available Routes: [Train Trip AA1]
+Year: 2020 - Month: 10 - Day: 8 - Hour: 16 - Minute: 30
+Destinations: [Train Station DEN][Train Station LAX]
+	[:Containers:]
+containers Available: true
+Seating Class: economy
+Layout: S
+Price: 200
+Total containers: 12
+Booked containers: 0
+Seating status:
+Container [0][0]: Available.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+Container [2][0]: Available.
+Container [2][1]: Available.
+Container [2][2]: Available.
+Container [3][0]: Available.
+Container [3][1]: Available.
+Container [3][2]: Available.
+
+containers Available: true
+Seating Class: first
+Layout: S
+Price: 500
+Total containers: 6
+Booked containers: 0
+Seating status:
+Container [0][0]: Available.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [1][0]: Available.
+Container [1][1]: Available.
+Container [1][2]: Available.
+
+[Train Trip EEE]
+Year: 2020 - Month: 8 - Day: 8 - Hour: 8 - Minute: 8
+Destinations: [Train Station LAX][Train Station DEN]
+	[:Containers:]
+containers Available: true
+Seating Class: economy
+Layout: W
+Price: 6666
+Total containers: 10
+Booked containers: 0
+Seating status:
+Container [0][0]: Available.
+Container [0][1]: Available.
+Container [0][2]: Available.
+Container [0][3]: Available.
+Container [0][4]: Available.
+Container [0][5]: Available.
+Container [0][6]: Available.
+Container [0][7]: Available.
+Container [0][8]: Available.
+Container [0][9]: Available.
+
+
+
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified train route.
+4. Find available train routes provided origin, destination and time.
+5. Book train route given specified seat.
+6. Book train route with seating preference.
+7. Display system details.
+8. Add train station.
+9. Add train line.
+10. Add train route with optional sections.
+11. Quit.
+
+[11.]
+
+1. Load system from file.
+2. Backup system to file.
+3. Alter cost of given section for specified train route.
+4. Find available train routes provided origin, destination and time.
+5. Book train route given specified seat.
+6. Book train route with seating preference.
+7. Display system details.
+8. Add train station.
+9. Add train line.
+10. Add train route with optional sections.
+11. Quit.
+11
+Exiting Program.
+
+Process finished with exit code 0
